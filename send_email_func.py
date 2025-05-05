@@ -8,8 +8,7 @@ import xlwings as xw
 import streamlit as st
 
 def send_forecast_email(MONTH_, DEADLINE_, SENDER_EMAIL_, SENDER_PASSWORD_):
-    FILE_PATH = r"C:/Users/marselius.agus/Prospect Motor, PT/Marketing Support and Data Analyst - Documents/Target/2025/Publish/6. Target adj. Apr-Dec 2025.xlsx"
-    tgt_table = pd.read_excel(FILE_PATH, sheet_name='RAW', engine='openpyxl', usecols='A:I', skiprows=1)
+    tgt_table = pd.read_excel('data/forecast_dealer_2025.csv')
 
     MONTH_MAPPING = {
         'Januari': 1, 'Februari': 2, 'Maret': 3, 'April': 4,
