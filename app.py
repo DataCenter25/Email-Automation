@@ -22,8 +22,7 @@ def logo_link(path_img, width):
         unsafe_allow_html=True,
     )
 
-FILE_PATH = r"C:/Users/marselius.agus/Prospect Motor, PT/Marketing Support and Data Analyst - Documents/Target/2025/Publish/6. Target adj. Apr-Dec 2025.xlsx"
-data = pd.read_excel(FILE_PATH, sheet_name='RAW', engine='openpyxl', usecols='A:I', skiprows=1)
+data = pd.read_csv('data/forecast_dealer_2025.csv')
 
 mapping_full_name_month = {
     1: 'Januari', 2: 'Februari', 3: 'Maret', 4: 'April',
