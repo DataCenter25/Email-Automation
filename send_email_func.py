@@ -8,7 +8,7 @@ import xlwings as xw
 import streamlit as st
 
 def send_forecast_email(MONTH_, DEADLINE_, SENDER_EMAIL_, SENDER_PASSWORD_):
-    tgt_table = pd.read_excel('data/forecast_dealer_2025.csv')
+    tgt_table = pd.read_csv('data/forecast_dealer_2025.csv')
 
     MONTH_MAPPING = {
         'Januari': 1, 'Februari': 2, 'Maret': 3, 'April': 4,
