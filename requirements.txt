@@ -1,3 +1,6 @@
 streamlit
 pandas
 streamlit_option_menu
+send_email_func
+market_info_func
+xlwings
